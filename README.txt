@@ -17,7 +17,7 @@
   on how to do so at http://rad-dev.org/wiki/guides/setup.
 
   You can also download versions as archives
-  at http://rad-dev.org/li3_bot/versions.
+  at http://rad-dev.org/li3_design/versions.
   
   Installation
   ------------
