@@ -35,7 +35,6 @@ class Dummy extends \lithium\template\Helper {
 		'image' => 'image'
 	);
 
-
 	/**
 	 * Generates a pseudo latin filler text. This text obiously
 	 * makes no sense at all (which is the intention).
