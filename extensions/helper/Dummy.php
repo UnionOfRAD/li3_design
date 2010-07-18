@@ -123,6 +123,8 @@ LOREM;
 	 *                          without leading `'#'`, defaults to `'0099ff'`.
 	 *        - `'foreground'`: Color to use as the text color in hex representation
 	 *                          without leading `'#'`, defaults to `'ffffff'`.
+	 *        - `'format'`: Either `'png'`, `'jpg'` or `'gif'`, defaults to `'png'`.
+	 *        - `'text'`: Text rendered in the center of the image.
 	 * @return string A HTML image tag with a data URI for the placeholder image.
 	 */
 	public function image($width, $height, array $options = array()) {
@@ -133,7 +135,7 @@ LOREM;
 		$defaults = array(
 			'background' => '0099ff',
 			'foreground' => 'ffffff',
-			'format' => 'png', // png, gif or jpg
+			'format' => 'png',
 			'text' => "{$width} × {$height} px"
 		);
 		$options += $defaults;
