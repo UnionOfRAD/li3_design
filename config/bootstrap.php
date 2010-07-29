@@ -14,7 +14,6 @@ use lithium\net\http\Media;
  *
  * @see li3_design\extensions\View
  */
-Media::type('email', 'text/html', array());
 Media::type('default', null, array(
 	'view' => '\li3_design\extensions\View',
 	'paths' => array(
