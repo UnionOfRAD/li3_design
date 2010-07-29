@@ -30,5 +30,7 @@
 
   About
   -----
-  The plugin comes with a `Dummy` helper which is able to generate filler text
-  and placeholder images.
+  The plugin contains following tools:
+
+  - A `Dummy` helper which is able to generate filler text and placeholder images.
+  - A `View` class with template locator.
