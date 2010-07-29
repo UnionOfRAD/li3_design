@@ -10,7 +10,6 @@ namespace li3_design\extensions;
 
 use \lithium\core\Libraries;
 use \lithium\core\Environment;
-use \lithium\util\String;
 
 /**
  * This extended View class adds HTML comments to all rendered templates and
@@ -32,7 +31,7 @@ class View extends \lithium\template\View {
 		$template = $this->_loader->template('template', $options);
 		$data = (array) $data + $this->outputFilters;
 		$data = $this->_renderer->render($template, $data, $options);
-		return $this->_pathized($data, $template);
+		return $this->_pathized($data, 'element', $template);
 	}
 
 	/**
@@ -46,7 +45,7 @@ class View extends \lithium\template\View {
 		$template = $this->_loader->template('template', $options);
 		$data = (array) $data + $this->outputFilters;
 		$data = $this->_renderer->render($template, $data, $options);
-		return $this->_pathized($data, $template);
+		return $this->_pathized($data, 'template', $template);
 	}
 
 	/**
@@ -56,12 +55,12 @@ class View extends \lithium\template\View {
 	 * @param string $path The path to the template that corresponds to the data.
 	 * @return string Data wrapped by HTML comments.
 	 */
-	protected function _pathized($data, $path) {
+	protected function _pathized($data, $type, $path) {
 		if (Environment::is('production')) {
 			return $data;
 		}
-		$message = "<!-- START OF {:start} -->\n{$data}\n<!-- END OF {:stop} -->";
-		return String::insert($message, array('start' => $path, 'stop' => $path));
+		$identifier = is_file($path) ? "{$type} {$path}" : $type;
+		return "<!-- START OF {$identifier} -->\n{$data}\n<!-- END OF {$identifier} -->";
 	}
 }
 
