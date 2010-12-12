@@ -47,7 +47,7 @@ class Dummy extends \lithium\template\Helper {
 	 *        - `'symbols'`: A list of characters to use for injecting punctuation symbols.
 	 *                       Defaults to `'.,'`. If set to `false` won't do any punctuation
 	 *                       at all.
-	 *        - `'chance'`: The chance (n out of 100) that given a mininium of `distance` to
+	 *        - `'chance'`: The chance (n out of 100) that given a minimum of `distance` to
 	 *                      the last symbol is reached a punctuation symbol is used. Defaults
 	 *                      to `15`.
 	 *        - `'distance'`: The mininum distance of words between symbols. Defaults to `5`.
