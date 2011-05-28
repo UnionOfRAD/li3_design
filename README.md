@@ -39,7 +39,7 @@ echo $this->dummy->image(200, 500, array(
 echo $this->dummy->image(200, 500, array(
     'text' => 'Hello world!',
 ));
-}}}
+```
 
 
 ## Requirements
