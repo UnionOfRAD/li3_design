@@ -41,15 +41,6 @@ echo $this->dummy->image(200, 500, array(
 ));
 }}}
 
-## Download
-
-  Clone the repository with `git clone code@rad-dev.org:li3_design.git`.
-  In order to be able to clone you must register an account on rad-dev.org
-  (this helps with getting involved i.e. for filing tickets later). Get help 
-  on how to do so at http://rad-dev.org/wiki/guides/setup.
-
-  You can also download versions as archives
-  at http://rad-dev.org/li3_design/versions.
 
 ## Requirements
 
