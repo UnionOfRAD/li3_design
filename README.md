@@ -51,9 +51,9 @@ The plugin's _master_ branch runs fine with the most recent stable Lithium relea
   In case you downloaded extract it first. You now have to register your plugin 
   as a library within your application in `config/bootstrap/libraries.php`.
 
-  Just add `Library::add('li3_design');` at the bottom of the file. Should your 
+  Just add `Libraries::add('li3_design');` at the bottom of the file. Should your 
   plugin not be located in one of the library paths (i.e. `<app>/libraries`)
-  you must also specify a path `Library::add('li3_design', array('path' => ...));`.
+  you must also specify a path `Libraries::add('li3_design', array('path' => ...));`.
 
 
 ## Copyright & License
