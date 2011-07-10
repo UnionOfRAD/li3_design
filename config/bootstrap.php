@@ -16,11 +16,11 @@ use lithium\net\http\Media;
  */
 Media::type('default', null, array(
 	'view' => '\li3_design\extensions\View',
-    'paths'    => array(
-    	'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
-    	'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
-    	'element'  => '{:library}/views/elements/{:template}.{:type}.php'
-    )
+	'paths'    => array(
+		'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
+		'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
+		'element'  => '{:library}/views/elements/{:template}.{:type}.php'
+	)
 ));
 
 ?>
