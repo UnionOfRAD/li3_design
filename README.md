@@ -67,6 +67,5 @@ file.
 
 If you're interested in adding more features to this plugin, we are all ears. Join us in #li3 on freenode and tell us what you think. Below a list of ideas which should serve as an inspiration to you and us ;)
 
-- Some kind of grid support (i.e. http://www.1kbgrid.com)
 - Command for extracting all used colors from CSS files and generate a color palette (in HTML format or just output codes as plaintext).
 - Commonly used elements?
